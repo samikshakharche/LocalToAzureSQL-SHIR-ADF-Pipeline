@@ -1,0 +1,2 @@
+USE LocalDB;
+GO

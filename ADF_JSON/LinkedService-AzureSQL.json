@@ -1,0 +1,17 @@
+{
+    "name": "AzureSQL",
+    "properties": {
+        "annotations": [],
+        "type": "AzureSqlDatabase",
+        "typeProperties": {
+            "server": "samiksha-sqlserver.database.windows.net",
+            "database": "CloudDB",
+            "encrypt": "mandatory",
+            "trustServerCertificate": false,
+            "authenticationType": "SystemAssignedManagedIdentity",
+            "alwaysEncryptedSettings": {
+                "alwaysEncryptedAkvAuthType": "ManagedIdentity"
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+Local to Azure SQL DB Pipeline – Steps
+
+1. ✅ Setup Local SQL Server
+   - Create a DB and 'Customers' table
+   - Insert 2–3 sample rows
+
+2. ✅ Create ADF and SHIR
+   - Create Azure Data Factory and Self-hosted IR
+   - Install SHIR agent locally and connect it with key
+
+3. ✅ Setup Azure SQL DB
+   - Create CloudDB on Azure SQL Server
+   - Allow Azure services and add current IP in firewall
+
+4. ✅ Create Linked Services
+   - LocalSQL (connect to local DB via SHIR)
+   - AzureSQL (connect to CloudDB)
+
+5. ✅ Create Datasets and Pipeline
+   - Source: Customers (SQL Server)
+   - Sink: Customers (Azure SQL)
+   - Use SELECT TOP 3 to copy small data
+
+6. ✅ Run the pipeline manually using Debug
+   - Check Monitor tab for success
+   - Confirm data in CloudDB (Azure Portal)
+
